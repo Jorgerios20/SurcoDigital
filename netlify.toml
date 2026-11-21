@@ -1,0 +1,10 @@
+# La web vive en sitio/; no hay paso de compilación.
+[build]
+  publish = "sitio"
+  command = ""
+
+# Los JSON se piden con fetch: que siempre traigan la versión más reciente.
+[[headers]]
+  for = "/data/*"
+  [headers.values]
+    Cache-Control = "no-cache"
