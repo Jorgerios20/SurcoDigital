@@ -1,0 +1,34 @@
+[
+  {
+    "pregunta": "¿Cuánto cuesta un sistema?",
+    "respuesta": "Depende de lo que necesite tu negocio. Primero lo conocemos y después te damos una cotización por escrito, por etapas, para que sepas qué pagas en cada una. [COMPLETAR: rango de precios o “desde $X”]"
+  },
+  {
+    "pregunta": "¿Cuánto tiempo tarda?",
+    "respuesta": "Trabajamos por etapas: entregamos primero lo que más te urge, para que lo uses mientras construimos lo demás. [COMPLETAR: tiempos de entrega típicos]"
+  },
+  {
+    "pregunta": "¿Funciona si tengo varias sucursales?",
+    "respuesta": "Sí. Ves cada sucursal o empresa por separado, o todas juntas en un solo reporte."
+  },
+  {
+    "pregunta": "¿Puedo facturar desde el sistema?",
+    "respuesta": "Sí. La facturación vive en el mismo sistema donde vendes, sin capturar dos veces."
+  },
+  {
+    "pregunta": "Hoy uso Excel. ¿Pierdo mi información?",
+    "respuesta": "No. Pasamos tus productos, clientes y datos importantes al sistema nuevo para que no empieces de cero."
+  },
+  {
+    "pregunta": "¿Mi equipo va a saber usarlo?",
+    "respuesta": "Capacitamos a tu gente en su propio puesto, con sus casos de todos los días. El sistema se hace para ellos, no al revés."
+  },
+  {
+    "pregunta": "¿Funciona en el celular?",
+    "respuesta": "Sí. Hacemos apps para Android, para que tu equipo levante pedidos, revise inventario o cobre desde donde esté."
+  },
+  {
+    "pregunta": "¿Qué pasa después de la entrega?",
+    "respuesta": "Seguimos contigo: soporte, ajustes y nuevas funciones cuando tu negocio las necesite. No entregamos y desaparecemos."
+  }
+]

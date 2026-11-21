@@ -1,0 +1,73 @@
+/* Surco Digital · skeletons
+   Sin degradados: los bloques laten con opacidad, y las líneas de texto falsas
+   son las tres franjas de la greca, que se encienden una tras otra. */
+
+.esqueleto,
+.esqueleto-linea,
+.esqueleto-greca span {
+  background: var(--esq, rgba(20, 48, 31, 0.12));
+  animation: latido 1.4s ease-in-out infinite;
+}
+
+/* En parcelas oscuras el skeleton se aclara */
+[data-capitulo="bosque"] .esqueleto,
+[data-capitulo="noche"] .esqueleto { --esq: rgba(232, 239, 227, 0.16); }
+/* Sobre el verde brote, un poco más intenso */
+[data-capitulo="brote"] .esqueleto-linea { --esq: rgba(20, 48, 31, 0.22); }
+
+.esqueleto-linea {
+  display: block; height: 0.9em; width: 80%; margin-top: 14px;
+}
+.esqueleto-linea--corta { width: 55%; margin-top: 8px; animation-delay: 120ms; }
+.esqueleto-linea--grande { height: 2.2rem; width: 12ch; margin-top: 10px; }
+.esqueleto-linea--grande:nth-child(2) { width: 9ch; animation-delay: 120ms; }
+.esqueleto-linea--grande:nth-child(3) { width: 7ch; animation-delay: 240ms; }
+.esqueleto-linea--grande:nth-child(4) { width: 13ch; animation-delay: 360ms; }
+
+/* Tejas de servicios mientras cargan */
+.ficha__lienzo.esqueleto { --esq: rgba(20, 48, 31, 0.08); }
+.ficha:nth-child(2n) .ficha__lienzo.esqueleto { animation-delay: 160ms; }
+.ficha:nth-child(3n) .ficha__lienzo.esqueleto { animation-delay: 320ms; }
+
+/* Fotos de una teja ya pintada, mientras llega la imagen */
+.ficha__lienzo:not(.ya)::after {
+  content: ""; position: absolute; width: 76%; height: 72%;
+  background: rgba(20, 48, 31, 0.1);
+  animation: latido 1.4s ease-in-out infinite;
+}
+.ficha--doble .ficha__lienzo:not(.ya)::after { width: 84%; }
+
+/* Cifras del panel */
+.esqueleto--cifra { height: 64px; --esq: #EEF3EA; }
+.esqueleto--cifra:nth-child(2) { animation-delay: 120ms; }
+.esqueleto--cifra:nth-child(3) { animation-delay: 240ms; }
+.panel .esqueleto-linea { margin-top: 0; width: 60%; height: 1.2em; --esq: #E3EBDE; }
+
+/* La greca: tres franjas paralelas, como en el isotipo */
+.esqueleto-greca { display: grid; gap: 12px; align-content: start; }
+.esqueleto-greca span { display: block; height: 14px; --esq: #E3EBDE; transform: skewX(var(--inclinacion)); }
+.esqueleto-greca span:nth-child(1) { width: 92%; }
+.esqueleto-greca span:nth-child(2) { width: 74%; animation-delay: 140ms; }
+.esqueleto-greca span:nth-child(3) { width: 56%; animation-delay: 280ms; }
+
+/* Preguntas */
+.esqueleto--pregunta { height: 72px; --esq: rgba(232, 239, 227, 0.7); }
+.esqueleto--pregunta:nth-child(2n) { animation-delay: 140ms; }
+.esqueleto--pregunta:nth-child(3n) { animation-delay: 280ms; }
+
+/* Error de carga */
+.carga-error { grid-column: 1 / -1; padding: 24px; background: rgba(20, 48, 31, 0.08); }
+.carga-error button {
+  margin-top: 12px; min-height: 44px; padding: 0 18px; border: 0;
+  background: var(--surco-bosque); color: var(--surco-marfil); font-weight: 600; cursor: pointer;
+}
+
+@keyframes latido {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.45; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .esqueleto, .esqueleto-linea, .esqueleto-greca span,
+  .ficha__lienzo:not(.ya)::after { animation: none; opacity: 0.7; }
+}

@@ -1,0 +1,46 @@
+{
+  "negocio": "Abarrotes de ejemplo",
+  "sucursales": [
+    {
+      "id": "centro", "nombre": "Centro",
+      "ventas": 18450, "tickets": 96,
+      "productos": [
+        { "nombre": "Aceite 1 L", "importe": 3120 },
+        { "nombre": "Frijol 1 kg", "importe": 2880 },
+        { "nombre": "Café 400 g", "importe": 2450 },
+        { "nombre": "Huevo 30 pzas", "importe": 2100 }
+      ],
+      "surtir": [
+        { "nombre": "Azúcar 2 kg", "quedan": 4, "minimo": 12 },
+        { "nombre": "Jabón en polvo 1 kg", "quedan": 2, "minimo": 10 }
+      ]
+    },
+    {
+      "id": "norte", "nombre": "Norte",
+      "ventas": 12730, "tickets": 71,
+      "productos": [
+        { "nombre": "Huevo 30 pzas", "importe": 2640 },
+        { "nombre": "Aceite 1 L", "importe": 2210 },
+        { "nombre": "Leche 1 L", "importe": 1980 },
+        { "nombre": "Frijol 1 kg", "importe": 1540 }
+      ],
+      "surtir": [
+        { "nombre": "Leche 1 L", "quedan": 6, "minimo": 24 }
+      ]
+    },
+    {
+      "id": "sur", "nombre": "Sur",
+      "ventas": 9860, "tickets": 58,
+      "productos": [
+        { "nombre": "Frijol 1 kg", "importe": 1920 },
+        { "nombre": "Café 400 g", "importe": 1610 },
+        { "nombre": "Aceite 1 L", "importe": 1450 },
+        { "nombre": "Arroz 1 kg", "importe": 1180 }
+      ],
+      "surtir": [
+        { "nombre": "Café 400 g", "quedan": 3, "minimo": 10 },
+        { "nombre": "Arroz 1 kg", "quedan": 5, "minimo": 15 }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-8 -2 220 220" width="880" height="880">
+<title>Surco Digital</title>
+<g transform="translate(118 108) skewX(-10) translate(-118 -108)">
+<path d="M64 148 L40 148 L40 196 L112 196 L112 64 L172 64 L172 124 L124 124" style="fill: none; stroke: #1F4A34; stroke-width: 31px; stroke-linejoin: miter; stroke-linecap: butt"/>
+<rect x="131" y="143" width="10" height="10" style="fill: #1F4A34"/>
+<rect x="143" y="143" width="10" height="10" style="fill: #1F4A34"/>
+<rect x="155" y="143" width="10" height="10" style="fill: #1F4A34"/>
+<rect x="143" y="155" width="10" height="10" style="fill: #1F4A34"/>
+<rect x="155" y="155" width="10" height="10" style="fill: #1F4A34"/>
+<rect x="167" y="155" width="10" height="10" style="fill: #1F4A34"/>
+<rect x="155" y="167" width="10" height="10" style="fill: #2F6B45"/>
+<rect x="167" y="167" width="10" height="10" style="fill: #2F6B45"/>
+<rect x="179" y="167" width="10" height="10" style="fill: #2F6B45"/>
+<rect x="167" y="179" width="10" height="10" style="fill: #4E7F2E"/>
+<rect x="179" y="179" width="10" height="10" style="fill: #4E7F2E"/>
+<rect x="191" y="179" width="10" height="10" style="fill: #4E7F2E"/>
+<rect x="179" y="191" width="10" height="10" style="fill: #7CB342"/>
+<rect x="191" y="191" width="10" height="10" style="fill: #7CB342"/>
+<rect x="203" y="191" width="10" height="10" style="fill: #7CB342"/>
+</g>
+</svg>

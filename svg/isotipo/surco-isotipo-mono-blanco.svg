@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-8 -2 220 220" width="880" height="880">
+<title>Surco Digital</title>
+
+<g transform="translate(118 108) skewX(-10) translate(-118 -108)">
+<g style="fill: none; stroke: #FFFFFF; stroke-width: 7px; stroke-linecap: butt; stroke-linejoin: miter">
+<path d="M64 160 L52 160 L52 184 L100 184 L100 52 L184 52 L184 136 L124 136"></path>
+<path d="M64 148 L40 148 L40 196 L112 196 L112 64 L172 64 L172 124 L124 124"></path>
+<path d="M64 136 L28 136 L28 208 L124 208 L124 76 L160 76 L160 112 L124 112"></path>
+</g>
+<rect x="132" y="144" width="8" height="8" style="fill: #FFFFFF"></rect>
+<rect x="144" y="144" width="8" height="8" style="fill: #FFFFFF"></rect>
+<rect x="156" y="144" width="8" height="8" style="fill: #FFFFFF"></rect>
+<rect x="144" y="156" width="8" height="8" style="fill: #FFFFFF"></rect>
+<rect x="156" y="156" width="8" height="8" style="fill: #FFFFFF"></rect>
+<rect x="168" y="156" width="8" height="8" style="fill: #FFFFFF"></rect>
+<rect x="156" y="168" width="8" height="8" style="fill: #FFFFFF"></rect>
+<rect x="168" y="168" width="8" height="8" style="fill: #FFFFFF"></rect>
+<rect x="180" y="168" width="8" height="8" style="fill: #FFFFFF"></rect>
+<rect x="168" y="180" width="8" height="8" style="fill: #FFFFFF"></rect>
+<rect x="180" y="180" width="8" height="8" style="fill: #FFFFFF"></rect>
+<rect x="192" y="180" width="8" height="8" style="fill: #FFFFFF"></rect>
+<rect x="180" y="192" width="8" height="8" style="fill: #FFFFFF"></rect>
+<rect x="192" y="192" width="8" height="8" style="fill: #FFFFFF"></rect>
+<rect x="204" y="192" width="8" height="8" style="fill: #FFFFFF"></rect>
+<path d="M98 50 L61.23 13.23" style="fill: none; stroke: #FFFFFF; stroke-width: 2.5px; stroke-linecap: round"></path>
+<path d="M89.51 41.51 L93.71 31.51 L89.51 21.51 Z" style="fill: #FFFFFF"></path>
+<path d="M89.51 41.51 L85.31 31.51 L89.51 21.51 Z" style="fill: #FFFFFF"></path>
+<path d="M89.51 41.51 L79.51 37.31 L69.51 41.51 Z" style="fill: #FFFFFF"></path>
+<path d="M89.51 41.51 L79.51 45.71 L69.51 41.51 Z" style="fill: #FFFFFF"></path>
+<path d="M79.62 31.62 L83.19 23.12 L79.62 14.62 Z" style="fill: #FFFFFF"></path>
+<path d="M79.62 31.62 L76.05 23.12 L79.62 14.62 Z" style="fill: #FFFFFF"></path>
+<path d="M79.62 31.62 L71.12 28.05 L62.62 31.62 Z" style="fill: #FFFFFF"></path>
+<path d="M79.62 31.62 L71.12 35.19 L62.62 31.62 Z" style="fill: #FFFFFF"></path>
+<path d="M69.72 21.72 L72.66 14.72 L69.72 7.72 Z" style="fill: #FFFFFF"></path>
+<path d="M69.72 21.72 L66.78 14.72 L69.72 7.72 Z" style="fill: #FFFFFF"></path>
+<path d="M69.72 21.72 L62.72 18.78 L55.72 21.72 Z" style="fill: #FFFFFF"></path>
+<path d="M69.72 21.72 L62.72 24.66 L55.72 21.72 Z" style="fill: #FFFFFF"></path>
+<path d="M61.23 13.23 L58.77 7.21 L52.74 4.74 Z" style="fill: #FFFFFF"></path>
+<path d="M61.23 13.23 L55.21 10.77 L52.74 4.74 Z" style="fill: #FFFFFF"></path>
+</g>
+
+</svg>

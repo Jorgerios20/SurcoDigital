@@ -1,0 +1,48 @@
+/* Surco Digital · tokens de diseño (fuente: DESIGN.md) */
+:root {
+  /* Paleta de marca */
+  --surco-bosque: #1F4A34;
+  --surco-medio: #4E7F2E;
+  --surco-brote: #7CB342;
+  --surco-brote-claro: #8BC34A;
+  --surco-noche: #14301F;
+  --surco-marfil: #E8EFE3;
+  --surco-texto: #3B4740;
+  --surco-blanco: #FFFFFF;
+
+  /* Roles */
+  --fondo: var(--surco-marfil);
+  --tinta: var(--surco-noche);
+  --tinta-suave: var(--surco-texto);
+  --accion: var(--surco-bosque);
+  --accion-tinta: var(--surco-marfil);
+
+  /* Tipografía: Sora, una sola familia */
+  --fuente: "Sora", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  /* Cinco tamaños, no más */
+  --t-gigante: clamp(2.6rem, 10.4vw, 9.6rem);
+  --t-titulo: clamp(2.1rem, 3.9vw, 3.6rem);
+  --t-frase: clamp(1.25rem, 1.9vw, 1.75rem);
+  --t-texto: 1.125rem;
+  --t-chico: 0.875rem;
+
+  /* Retícula u = 12 (DESIGN.md §2) */
+  --u: 12px;
+  --margen: clamp(16px, 3.4vw, 48px);
+  --hueco: calc(var(--u) * 0.75);
+  --seccion: clamp(72px, 8.5vw, 124px);
+  --ancho: 1440px;
+
+  /* Esquinas: cuadradas en toda la página */
+  --radio: 0;
+
+  /* Movimiento */
+  --curva: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --rapido: 160ms;
+  --medio: 300ms;
+  --lento: 700ms;
+
+  /* Inclinación de la greca */
+  --inclinacion: -10deg;
+}
