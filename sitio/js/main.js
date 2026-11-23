@@ -1,9 +1,8 @@
 /* Surco Digital · comportamiento general */
 
-/* [COMPLETAR] Datos de contacto reales */
+/* Contacto: todo entra por WhatsApp */
 window.SURCO = {
-  whatsapp: '520000000000', // lada de país + número, sin espacios ni signos
-  correo: 'hola@surcodigital.mx',
+  whatsapp: '525560678097', // lada de país + número, sin espacios ni signos
   mensaje: 'Hola, quiero platicar sobre un sistema para mi negocio.'
 };
 
@@ -21,22 +20,9 @@ window.SURCO = {
     a.rel = 'noopener';
   });
 
-  /* Correo */
-  document.querySelectorAll('[data-correo]').forEach((a) => {
-    a.href = 'mailto:' + window.SURCO.correo;
-    a.textContent = window.SURCO.correo;
-  });
-
-  /* Año y hora local en el pie */
+  /* Año en el pie */
   const anio = document.querySelector('[data-anio]');
   if (anio) anio.textContent = new Date().getFullYear();
-  const hora = document.querySelector('[data-hora]');
-  if (hora) {
-    const fmt = new Intl.DateTimeFormat('es-MX', { hour: '2-digit', minute: '2-digit', hourCycle: 'h23', timeZone: 'America/Mexico_City' });
-    const pinta = () => { const d = new Date(); hora.textContent = fmt.format(d); hora.dateTime = d.toISOString(); };
-    pinta();
-    setInterval(pinta, 30000);
-  }
 
   /* Formulario de contacto → WhatsApp con el mensaje escrito */
   const form = document.querySelector('[data-contacto]');
@@ -47,6 +33,8 @@ window.SURCO = {
       const necesidad = form.necesidad.value.trim();
       let texto = 'Hola, soy ' + nombre + '.';
       texto += necesidad ? ' Mi negocio necesita: ' + necesidad + '.' : ' Quiero platicar sobre un sistema para mi negocio.';
+      const presupuesto = form.querySelector('input[name="presupuesto"]:checked');
+      if (presupuesto) texto += ' Presupuesto aproximado: ' + presupuesto.value + '.';
       window.open(enlaceWhatsApp(texto), '_blank', 'noopener');
     });
   }

@@ -1,57 +1,26 @@
 [
   {
     "nombre": "Punto de venta multisucursal",
-    "beneficio": "Vende rápido y ve cada tienda por separado o todas juntas.",
-    "foto": "img/fotos/antique-cash-register-collection-51838651448.jpg",
-    "alt": "Cajas registradoras antiguas en exhibición",
-    "ancho": 1920, "alto": 1280,
-    "doble": true
+    "beneficio": "Vende rápido y ve cada tienda por separado o todas juntas."
   },
   {
     "nombre": "Sistemas ERP a la medida",
-    "beneficio": "Ventas, compras e inventario en un solo lugar.",
-    "foto": "img/fotos/ledger-kodak-archive-series-4-ledgers-accounts.jpg",
-    "alt": "Libro de contabilidad antiguo, gastado por el uso",
-    "ancho": 2000, "alto": 3000
+    "beneficio": "Ventas, compras e inventario en un solo lugar."
   },
   {
     "nombre": "Inventario y kardex",
-    "beneficio": "Qué hay, dónde está y cómo se movió cada producto.",
-    "foto": "img/fotos/binders-boxes-shelves-large-archive.webp",
-    "alt": "Pasillo de anaqueles llenos de cajas y carpetas",
-    "ancho": 1600, "alto": 1067
-  },
-  {
-    "nombre": "Facturación",
-    "beneficio": "Factura desde el mismo sistema donde vendes.",
-    "foto": "img/fotos/meade-brothers-invoice-1863-henry.webp",
-    "alt": "Factura escrita a mano en 1863",
-    "ancho": 1600, "alto": 1266
+    "beneficio": "Qué hay, dónde está y cómo se movió cada producto."
   },
   {
     "nombre": "Registro de clientes",
-    "beneficio": "Conoce a tus clientes y véndeles mejor.",
-    "foto": "img/fotos/card-index-system-united-producers.webp",
-    "alt": "Empleada consultando un fichero de tarjetas de clientes",
-    "ancho": 1600, "alto": 1227
-  },
-  {
-    "nombre": "Apps móviles (Android)",
-    "beneficio": "La operación de tu negocio en el celular de tu equipo.",
-    "foto": "img/fotos/rotary-telephone-portsmouth-city-museum.jpg",
-    "alt": "Teléfono de disco antiguo",
-    "ancho": 1920, "alto": 2880
+    "beneficio": "Conoce a tus clientes y véndeles mejor."
   },
   {
     "nombre": "Páginas web y catálogos",
-    "beneficio": "Tu mostrador, abierto también en internet.",
-    "foto": "img/fotos/black-country-living-museum-the-village-centre.jpg",
-    "alt": "Mostrador de una tienda de abarrotes antigua",
-    "ancho": 1920, "alto": 1440
+    "beneficio": "Tu mostrador, abierto también en internet."
   },
   {
     "nombre": "Reportes",
-    "beneficio": "Decide con números reales, no con corazonadas.",
-    "grafica": [38, 52, 46, 61, 70, 66, 84]
+    "beneficio": "Decide con números reales, no con corazonadas."
   }
 ]

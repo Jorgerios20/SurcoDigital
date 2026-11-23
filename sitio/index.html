@@ -4,14 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Surco Digital · Sistemas a la medida para tu negocio</title>
-  <meta name="description" content="Desarrollamos el sistema que tu negocio necesita: punto de venta multisucursal, inventario, facturación, ERP y apps, para que tengas el control y tu equipo crezca contigo.">
+  <meta name="description" content="Desarrollamos el sistema que tu negocio necesita: punto de venta multisucursal, inventario, ERP, reportes y páginas web, para que tengas el control y tu equipo crezca contigo.">
   <meta name="theme-color" content="#1F4A34">
 
   <!-- [COMPLETAR] Cambia https://surcodigital.mx por tu dominio real -->
   <link rel="canonical" href="https://surcodigital.mx/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Surco Digital · Sembramos tecnología, cosechas crecimiento">
-  <meta property="og:description" content="Sistemas a la medida para PyMEs: ventas, inventario, facturación y apps.">
+  <meta property="og:description" content="Sistemas a la medida para PyMEs: ventas, inventario, reportes y páginas web.">
   <meta property="og:image" content="https://surcodigital.mx/icon-512.png">
   <meta property="og:locale" content="es_MX">
 
@@ -38,10 +38,12 @@
     "@type": "ProfessionalService",
     "name": "Surco Digital",
     "slogan": "Sembramos tecnología, cosechas crecimiento.",
-    "description": "Desarrollo de sistemas a la medida: ERP, punto de venta multisucursal, inventario, facturación, apps móviles y páginas web.",
+    "description": "Desarrollo de sistemas a la medida: ERP, punto de venta multisucursal, inventario, reportes y páginas web.",
     "url": "https://surcodigital.mx/",
     "logo": "https://surcodigital.mx/logo.svg",
-    "areaServed": "MX"
+    "areaServed": "MX",
+    "telephone": "+52 55 6067 8097",
+    "openingHours": "Mo-Fr 08:00-18:00"
   }
   </script>
 </head>
@@ -57,6 +59,7 @@
       <nav class="barra__nav" aria-label="Principal">
         <button class="barra__menu" type="button" aria-expanded="false" aria-controls="menu-principal" data-menu>Menú</button>
         <ul class="barra__enlaces" id="menu-principal">
+          <li><a href="#proyectos">Proyectos</a></li>
           <li><a href="#servicios">Servicios</a></li>
           <li><a href="#demo">En una pantalla</a></li>
           <li><a href="#como-trabajamos">Cómo trabajamos</a></li>
@@ -78,7 +81,7 @@
       </h1>
       <div class="hero__tierra" data-capitulo="bosque">
         <div class="hero__apoyo" data-revela>
-          <p>Desarrollamos el sistema que tu negocio necesita (ventas, inventario, facturación y apps) para que tengas el control y tu equipo crezca contigo.</p>
+          <p>Desarrollamos el sistema que tu negocio necesita (ventas, inventario, reportes y páginas web) para que tengas el control y tu equipo crezca contigo.</p>
           <a class="boton boton--brote" href="#contacto" data-whatsapp>Platícanos de tu negocio</a>
         </div>
         <figure class="hero__foto envoltura" data-revela>
@@ -89,22 +92,40 @@
       </div>
     </section>
 
+    <!-- ============ PROYECTOS ============ -->
+    <section class="capitulo proyectos" id="proyectos" data-capitulo="marfil" aria-labelledby="titulo-proyectos">
+      <div class="envoltura">
+        <div class="proyectos__cabeza" data-revela>
+          <h2 id="titulo-proyectos">Lo que ya sembramos</h2>
+          <p>Negocios reales que hoy venden, controlan y atienden con lo que construimos juntos.</p>
+        </div>
+        <div class="greca" aria-hidden="true"></div>
+        <ol class="proyectos__lista" data-proyectos aria-busy="true">
+          <!-- Skeleton: se reemplaza con data/proyectos.json -->
+          <li class="proyecto" aria-hidden="true">
+            <div class="proyecto__texto"><span class="esqueleto-linea esqueleto-linea--grande"></span><span class="esqueleto-linea"></span><span class="esqueleto-linea esqueleto-linea--corta"></span></div>
+            <div class="proyecto__escena"><div class="esqueleto esqueleto--pantalla"></div></div>
+          </li>
+        </ol>
+        <noscript><p class="proyectos__sinjs">BACO Vinos y Licores (página web, punto de venta y ERP), Llantahorro (página web) y ARQUEMIST. (sitio bilingüe).</p></noscript>
+      </div>
+    </section>
+
     <!-- ============ SERVICIOS ============ -->
-    <section class="capitulo servicios" id="servicios" data-capitulo="marfil" aria-labelledby="titulo-servicios">
+    <section class="capitulo servicios" id="servicios" data-capitulo="blanco" aria-labelledby="titulo-servicios">
       <div class="envoltura servicios__rejilla">
         <div class="servicios__intro" data-revela>
           <h2 id="titulo-servicios">Del papel al sistema</h2>
           <p>Hoy llevas el negocio en libretas, tickets y hojas sueltas. Cada una de esas piezas puede vivir en un solo sistema hecho a tu medida.</p>
         </div>
-        <ul class="servicios__lista" data-servicios aria-busy="true" aria-label="Servicios">
+        <ol class="servicios__lista" data-servicios aria-busy="true" aria-label="Servicios">
           <!-- Skeletons: se reemplazan con data/servicios.json -->
-          <li class="ficha ficha--doble" aria-hidden="true"><div class="ficha__lienzo esqueleto"></div><span class="esqueleto-linea"></span><span class="esqueleto-linea esqueleto-linea--corta"></span></li>
-          <li class="ficha" aria-hidden="true"><div class="ficha__lienzo esqueleto"></div><span class="esqueleto-linea"></span><span class="esqueleto-linea esqueleto-linea--corta"></span></li>
-          <li class="ficha" aria-hidden="true"><div class="ficha__lienzo esqueleto"></div><span class="esqueleto-linea"></span><span class="esqueleto-linea esqueleto-linea--corta"></span></li>
-          <li class="ficha" aria-hidden="true"><div class="ficha__lienzo esqueleto"></div><span class="esqueleto-linea"></span><span class="esqueleto-linea esqueleto-linea--corta"></span></li>
-          <li class="ficha" aria-hidden="true"><div class="ficha__lienzo esqueleto"></div><span class="esqueleto-linea"></span><span class="esqueleto-linea esqueleto-linea--corta"></span></li>
-        </ul>
-        <noscript><p class="servicios__sinjs">Punto de venta multisucursal, ERP a la medida, inventario y kardex, facturación, registro de clientes, apps Android, páginas web y reportes.</p></noscript>
+          <li class="servicio" aria-hidden="true"><span class="esqueleto-linea esqueleto-linea--grande"></span><span class="esqueleto-linea esqueleto-linea--corta"></span></li>
+          <li class="servicio" aria-hidden="true"><span class="esqueleto-linea esqueleto-linea--grande"></span><span class="esqueleto-linea esqueleto-linea--corta"></span></li>
+          <li class="servicio" aria-hidden="true"><span class="esqueleto-linea esqueleto-linea--grande"></span><span class="esqueleto-linea esqueleto-linea--corta"></span></li>
+          <li class="servicio" aria-hidden="true"><span class="esqueleto-linea esqueleto-linea--grande"></span><span class="esqueleto-linea esqueleto-linea--corta"></span></li>
+        </ol>
+        <noscript><p class="servicios__sinjs">Punto de venta multisucursal, ERP a la medida, inventario y kardex, registro de clientes, páginas web y reportes.</p></noscript>
       </div>
     </section>
 
@@ -143,6 +164,7 @@
     <!-- ============ PROMESAS ============ -->
     <section class="capitulo promesas" id="promesas" data-capitulo="noche" aria-labelledby="titulo-promesas">
       <div class="envoltura promesas__rejilla">
+        <div class="greca greca--promesas" aria-hidden="true"></div>
         <h2 class="promesas__titulo" id="titulo-promesas" data-revela>Lo que prometemos</h2>
         <ul class="promesas__lista">
           <li data-revela><strong>A tu medida.</strong> El sistema se adapta a tu operación, no al revés.</li>
@@ -159,22 +181,22 @@
         <h2 class="proceso__titulo" id="titulo-proceso" data-revela>Del terreno a la cosecha</h2>
         <ol class="proceso__etapas">
           <li class="etapa etapa--1" data-revela>
-            <div class="etapa__lienzo"><img src="img/fotos/close-up-cracks-dry-dirt.webp" width="1024" height="683" alt="Tierra seca agrietada, todavía sin trabajar" loading="lazy" decoding="async"></div>
+            <div class="etapa__lienzo" aria-hidden="true"><small>01 · alfa</small><svg class="letra" viewBox="0 0 100 124" aria-hidden="true"><path d="M8 116 L50 8 L92 116 M25 76 H75"/></svg></div>
             <h3>Conocer el terreno</h3>
             <p>Visitamos tu negocio y vemos cómo vendes, compras y controlas hoy.</p>
           </li>
           <li class="etapa etapa--2" data-revela>
-            <div class="etapa__lienzo"><img src="img/fotos/horse-ploughing-14-8069908518.jpg" width="1920" height="1188" alt="Caballos de tiro arando un campo" loading="lazy" decoding="async"></div>
+            <div class="etapa__lienzo" aria-hidden="true"><small>02 · beta</small><svg class="letra" viewBox="0 0 100 124" aria-hidden="true"><path d="M18 116 V8 H70 V58 H18 M18 58 H86 V116 H10"/></svg></div>
             <h3>Abrir el surco</h3>
             <p>Diseñamos el sistema contigo: tus pantallas, tus procesos, tus reportes.</p>
           </li>
           <li class="etapa etapa--3" data-revela>
-            <div class="etapa__lienzo"><img src="img/fotos/a-paddy-field-with-young-green-rice.jpg" width="1536" height="2048" alt="Brotes jóvenes sembrados en hileras" loading="lazy" decoding="async"></div>
+            <div class="etapa__lienzo" aria-hidden="true"><small>03 · gamma</small><svg class="letra" viewBox="0 0 100 124" aria-hidden="true"><path d="M18 120 V8 H90"/></svg></div>
             <h3>Sembrar</h3>
             <p>Lo construimos por etapas, lo instalamos y capacitamos a tu equipo.</p>
           </li>
           <li class="etapa etapa--4" data-revela>
-            <div class="etapa__lienzo"><img src="img/fotos/cornfields-farming.jpg" width="960" height="638" alt="Maizal crecido bajo el cielo azul" loading="lazy" decoding="async"></div>
+            <div class="etapa__lienzo" aria-hidden="true"><small>04 · delta</small><svg class="letra" viewBox="0 0 100 124" aria-hidden="true"><path d="M8 112 L50 10 L92 112 Z"/></svg></div>
             <h3>Cosechar</h3>
             <p>Seguimos contigo con soporte, ajustes y nuevas funciones.</p>
           </li>
@@ -201,23 +223,50 @@
     <section class="capitulo contacto" id="contacto" data-capitulo="bosque" aria-labelledby="titulo-contacto">
       <div class="contacto__tira" aria-hidden="true">
         <div class="contacto__carril">
-          <img src="img/fotos/deep-rich-furrows-farmland-east.webp" alt="" width="225" height="150" loading="lazy">
-          <img src="img/fotos/antique-cash-register-collection-51838651448.jpg" alt="" width="150" height="150" loading="lazy">
-          <img src="img/fotos/a-paddy-field-with-young-green-rice.jpg" alt="" width="112" height="150" loading="lazy">
-          <img src="img/fotos/meade-brothers-invoice-1863-henry.webp" alt="" width="225" height="150" loading="lazy">
-          <img src="img/fotos/card-index-system-united-producers.webp" alt="" width="150" height="150" loading="lazy">
-          <img src="img/fotos/rotary-telephone-portsmouth-city-museum.jpg" alt="" width="112" height="150" loading="lazy">
-          <img src="img/fotos/horse-ploughing-14-8069908518.jpg" alt="" width="225" height="150" loading="lazy">
-          <img src="img/fotos/binders-boxes-shelves-large-archive.webp" alt="" width="150" height="150" loading="lazy">
-          <img src="img/fotos/ledger-kodak-archive-series-4-ledgers-accounts.jpg" alt="" width="112" height="150" loading="lazy">
-          <img src="img/fotos/cornfields-farming.jpg" alt="" width="225" height="150" loading="lazy">
-          <img src="img/fotos/black-country-living-museum-the-village-centre.jpg" alt="" width="150" height="150" loading="lazy">
-          <img src="img/fotos/close-up-cracks-dry-dirt.webp" alt="" width="112" height="150" loading="lazy">
+          <!-- Capturas de proyectos publicados (no agregar aquí los que aún no tienen permiso) -->
+          <img src="img/proyectos/baco/web.webp" alt="" width="240" height="150" loading="lazy">
+          <img src="img/proyectos/llantahorro/web-cel.webp" alt="" width="69" height="150" loading="lazy">
+          <img src="img/proyectos/baco/erp-pos.webp" alt="" width="240" height="150" loading="lazy">
+          <img src="img/proyectos/arquemist/web.webp" alt="" width="240" height="150" loading="lazy">
+          <img src="img/proyectos/baco/web-cel.webp" alt="" width="69" height="150" loading="lazy">
+          <img src="img/proyectos/llantahorro/web.webp" alt="" width="240" height="150" loading="lazy">
+          <img src="img/proyectos/baco/erp-dashboard.webp" alt="" width="240" height="150" loading="lazy">
+          <img src="img/proyectos/arquemist/web-cel.webp" alt="" width="69" height="150" loading="lazy">
         </div>
       </div>
       <div class="envoltura">
         <h2 id="titulo-contacto" data-revela>Platícanos de tu negocio</h2>
         <form class="contacto__barra" data-contacto data-revela>
+          <fieldset class="escala">
+            <legend>¿Cuánto piensas invertir? <span>Opcional, nos ayuda a proponerte lo justo.</span></legend>
+            <div class="escala__opciones">
+              <label class="escala__opcion">
+                <input type="radio" name="presupuesto" value="Menos de $15,000">
+                <span class="escala__nivel" aria-hidden="true"><i></i></span>
+                <span>Menos de $15,000</span>
+              </label>
+              <label class="escala__opcion">
+                <input type="radio" name="presupuesto" value="$15,000 a $40,000">
+                <span class="escala__nivel" aria-hidden="true"><i></i><i></i></span>
+                <span>$15,000 a $40,000</span>
+              </label>
+              <label class="escala__opcion">
+                <input type="radio" name="presupuesto" value="$40,000 a $100,000">
+                <span class="escala__nivel" aria-hidden="true"><i></i><i></i><i></i></span>
+                <span>$40,000 a $100,000</span>
+              </label>
+              <label class="escala__opcion">
+                <input type="radio" name="presupuesto" value="Más de $100,000">
+                <span class="escala__nivel" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+                <span>Más de $100,000</span>
+              </label>
+              <label class="escala__opcion">
+                <input type="radio" name="presupuesto" value="Aún no lo sé">
+                <span class="escala__nivel" aria-hidden="true"><b>?</b></span>
+                <span>Aún no lo sé</span>
+              </label>
+            </div>
+          </fieldset>
           <div class="celda">
             <label class="oculto" for="c-nombre">Tu nombre</label>
             <input id="c-nombre" name="nombre" type="text" autocomplete="name" placeholder="Tu nombre" required>
@@ -229,7 +278,7 @@
           <button class="celda celda--enviar" type="submit">Enviar por WhatsApp</button>
         </form>
         <div class="contacto__notas">
-          <p>Te respondemos el mismo día hábil. [COMPLETAR: horario de atención]</p>
+          <p>Te atendemos de lunes a viernes, de 8:00 a. m. a 6:00 p. m.</p>
           <p id="c-nota-envio">Se abre WhatsApp con tu mensaje listo para enviar.</p>
         </div>
       </div>
@@ -245,6 +294,7 @@
       </div>
       <nav class="teja teja--nav" aria-label="Pie de página">
         <ul>
+          <li><a href="#proyectos">Proyectos</a></li>
           <li><a href="#servicios">Servicios</a></li>
           <li><a href="#demo">En una pantalla</a></li>
           <li><a href="#como-trabajamos">Cómo trabajamos</a></li>
@@ -252,17 +302,12 @@
           <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
-      <div class="teja teja--hora">
-        <!-- [COMPLETAR] tu ciudad -->
-        <p>México</p>
-        <p class="teja__hora"><time data-hora>--:--</time></p>
-      </div>
-      <div class="teja teja--correo">
-        <p>Escríbenos</p>
-        <!-- [COMPLETAR] tu correo real -->
-        <a href="mailto:hola@surcodigital.mx" data-correo>hola@surcodigital.mx</a>
-      </div>
+      <a class="teja teja--whatsapp" href="https://wa.me/525560678097" data-whatsapp>
+        <span>Escríbenos por WhatsApp</span>
+        <span class="teja__numero">55 6067 8097</span>
+      </a>
       <div class="teja teja--marca">
+        <div class="greca greca--pie" aria-hidden="true"></div>
         <img src="logo-negativo.svg" alt="Surco Digital" width="704" height="220" loading="lazy">
       </div>
       <a class="teja teja--invitacion" href="#contacto" data-whatsapp>
@@ -271,7 +316,7 @@
       </a>
     </div>
     <p class="pie__creditos">
-      Fotografías de colecciones abiertas: <a href="https://commons.wikimedia.org/w/index.php?curid=132297063">“Antique Cash Register Collection (51838651448)”</a> by Eric Friedebach, <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>, via Wikimedia Commons; <a href="https://collections.museumsvictoria.com.au/items/2030196">“Ledger - Kodak Archive, Series 4, 'Ledgers', 'Accounts Payable', Jun 1919 - Sep 1928”</a>, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>, via museumsvictoria; <a href="https://www.rawpixel.com/image/12150814/image-face-paper-person">“Card index system United Producers”</a> by libraryofcongress, <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>, via rawpixel; <a href="https://www.rawpixel.com/image/12229784/photo-image-paper-book-art">“Meade Brothers invoice (1863), Henry”</a>, <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>, via rawpixel; <a href="https://www.rawpixel.com/image/3298148/free-photo-image-warehouse-aisle-book">“Binders boxes shelves large archive”</a>, <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>, via rawpixel; <a href="https://commons.wikimedia.org/w/index.php?curid=176196797">“Rotary Telephone, Portsmouth City Museum”</a> by Tim Sheerman-Chase, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>, via Wikimedia Commons; <a href="https://commons.wikimedia.org/w/index.php?curid=75691705">“Black Country Living Museum - The Village Centre - Gregory’s General Store - inside the s…”</a> by Elliott Brown from Birmingham, United Kingdom, <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>, via Wikimedia Commons; <a href="https://www.rawpixel.com/image/3286803/free-photo-image-pattern-abstract-desert">“Close-up cracks dry dirt”</a>, <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>, via rawpixel; <a href="https://www.rawpixel.com/image/434229/free-photo-image-soil-farmland-carol-highsmith">“Deep, rich furrows farmland east”</a> by Carol M Highsmith, <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>, via rawpixel; <a href="https://wordpress.org/photos/photo/57692465dd/">“A paddy field with young green rice seedlings planted in neat rows. A narrow earthen path…”</a> by Bigul Malayi, <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>, via WordPress Photo Directory; <a href="https://stocksnap.io/photo/cornfields-farming-420322FE63">“Cornfields Farming”</a> by Skitter Photo, <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>, via StockSnap; <a href="https://commons.wikimedia.org/w/index.php?curid=103436712">“Horse Ploughing (14) (8069908518)”</a> by Bernard Spragg. NZ from Christchurch, New Zealand, <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en/">CC0</a>, via Wikimedia Commons.
+      Foto del inicio: <a href="https://www.rawpixel.com/image/434229/free-photo-image-soil-farmland-carol-highsmith">“Deep, rich furrows farmland east”</a> by Carol M Highsmith, <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>, via rawpixel.
     </p>
   </footer>
 </body>

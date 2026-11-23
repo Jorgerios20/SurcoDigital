@@ -24,18 +24,8 @@
 .esqueleto-linea--grande:nth-child(3) { width: 7ch; animation-delay: 240ms; }
 .esqueleto-linea--grande:nth-child(4) { width: 13ch; animation-delay: 360ms; }
 
-/* Tejas de servicios mientras cargan */
-.ficha__lienzo.esqueleto { --esq: rgba(20, 48, 31, 0.08); }
-.ficha:nth-child(2n) .ficha__lienzo.esqueleto { animation-delay: 160ms; }
-.ficha:nth-child(3n) .ficha__lienzo.esqueleto { animation-delay: 320ms; }
-
-/* Fotos de una teja ya pintada, mientras llega la imagen */
-.ficha__lienzo:not(.ya)::after {
-  content: ""; position: absolute; width: 76%; height: 72%;
-  background: rgba(20, 48, 31, 0.1);
-  animation: latido 1.4s ease-in-out infinite;
-}
-.ficha--doble .ficha__lienzo:not(.ya)::after { width: 84%; }
+/* Proyectos y servicios mientras cargan */
+.esqueleto--pantalla { aspect-ratio: 16 / 10; --esq: rgba(20, 48, 31, 0.08); }
 
 /* Cifras del panel */
 .esqueleto--cifra { height: 64px; --esq: #EEF3EA; }
@@ -68,6 +58,5 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .esqueleto, .esqueleto-linea, .esqueleto-greca span,
-  .ficha__lienzo:not(.ya)::after { animation: none; opacity: 0.7; }
+  .esqueleto, .esqueleto-linea, .esqueleto-greca span { animation: none; opacity: 0.7; }
 }

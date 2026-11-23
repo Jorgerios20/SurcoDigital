@@ -1,0 +1,101 @@
+[
+  {
+    "id": "baco",
+    "nombre": "BACO Vinos y Licores",
+    "giro": "Vinatería · Tultitlán, Estado de México",
+    "resumen": "Su página dice si están abiertos ahora y muestra el catálogo para pedir por WhatsApp. Detrás, un ERP con punto de venta, inventario, compras, promociones y reportes.",
+    "hicimos": [
+      "Página web",
+      "Punto de venta",
+      "ERP e inventario"
+    ],
+    "url": "https://bacovinosylicores.com",
+    "dominio": "bacovinosylicores.com",
+    "vistas": [
+      {
+        "nombre": "Página web",
+        "barra": "bacovinosylicores.com",
+        "img": "img/proyectos/baco/web.webp",
+        "alt": "Página de BACO Vinos y Licores: logo, horario y botones para pedir a domicilio",
+        "equipo": "navegador",
+        "celular": {
+          "img": "img/proyectos/baco/web-cel.webp",
+          "alt": "La página de BACO en un celular"
+        }
+      },
+      {
+        "nombre": "Dashboard",
+        "equipo": "computadora",
+        "barra": "ERP · Dashboard",
+        "img": "img/proyectos/baco/erp-dashboard.webp",
+        "alt": "Dashboard del ERP de BACO: lo vendido en el mes, el resultado del negocio y las alertas",
+        "celular": {
+          "img": "img/proyectos/baco/erp-dashboard-cel.webp",
+          "alt": "El dashboard del ERP de BACO en un celular"
+        }
+      },
+      {
+        "nombre": "Punto de venta",
+        "equipo": "computadora",
+        "barra": "ERP · Punto de venta",
+        "img": "img/proyectos/baco/erp-pos.webp",
+        "alt": "Punto de venta del ERP de BACO con cuatro artículos en la cuenta y el total a cobrar",
+        "celular": {
+          "img": "img/proyectos/baco/erp-pos-cel.webp",
+          "alt": "El punto de venta de BACO en un celular"
+        }
+      }
+    ]
+  },
+  {
+    "id": "llantahorro",
+    "nombre": "Llantahorro",
+    "giro": "Llantera multimarca · Querétaro",
+    "resumen": "Página con sus servicios, marcas y sucursales, pensada para que los encuentren en Google y les llamen o escriban desde el celular.",
+    "hicimos": [
+      "Página web",
+      "Posicionamiento local"
+    ],
+    "url": "https://llantahorroqro.com.mx",
+    "dominio": "llantahorroqro.com.mx",
+    "vistas": [
+      {
+        "nombre": "Página web",
+        "barra": "llantahorroqro.com.mx",
+        "img": "img/proyectos/llantahorro/web.webp",
+        "alt": "Página de Llantahorro: «Tu camino. Tus llantas.» sobre una foto de su bodega",
+        "equipo": "navegador",
+        "celular": {
+          "img": "img/proyectos/llantahorro/web-cel.webp",
+          "alt": "La página de Llantahorro en un celular"
+        }
+      }
+    ]
+  },
+  {
+    "id": "arquemist",
+    "nombre": "ARQUEMIST.",
+    "giro": "Estudio de arquitectura y diseño",
+    "resumen": "Sitio bilingüe, en español e inglés, con la historia del estudio y una ficha para cada proyecto.",
+    "hicimos": [
+      "Página web",
+      "Español e inglés",
+      "Portafolio"
+    ],
+    "url": null,
+    "dominio": null,
+    "vistas": [
+      {
+        "nombre": "Página web",
+        "barra": "ARQUEMIST.",
+        "img": "img/proyectos/arquemist/web.webp",
+        "alt": "Página de ARQUEMIST.: «Transformamos ideas en espacios y espacios en experiencias» junto a un casco de obra",
+        "equipo": "navegador",
+        "celular": {
+          "img": "img/proyectos/arquemist/web-cel.webp",
+          "alt": "La página de ARQUEMIST. en un celular"
+        }
+      }
+    ]
+  }
+]

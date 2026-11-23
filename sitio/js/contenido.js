@@ -32,31 +32,89 @@
     contenedor.setAttribute('aria-busy', 'false');
   };
 
+  const dosCifras = (n) => String(n).padStart(2, '0');
+
+  /* ---------- Proyectos ----------
+     Solo se pintan los que están en data/proyectos.json.
+     Los que aún no tienen permiso del cliente viven fuera de sitio/ (ver pendientes/). */
+  const proyectos = document.querySelector('[data-proyectos]');
+  function pintaProyectos() {
+    carga('data/proyectos.json').then((lista) => {
+      const items = lista.map((p, i) => {
+        const primera = p.vistas[0];
+        const modoCarga = i === 0 ? 'eager' : 'lazy';
+
+        // Pantalla grande: ventana de navegador para páginas web, laptop para sistemas
+        const pantalla = el('img', { src: primera.img, alt: primera.alt, width: 1600, height: 1000, loading: modoCarga, decoding: 'async' });
+        const barra = el('span', { class: 'equipo__direccion', text: primera.barra });
+        const equipo = el('figure', { class: 'equipo equipo--' + primera.equipo, id: 'vista-' + p.id },
+          el('div', { class: 'equipo__barra', 'aria-hidden': 'true' }, el('i'), el('i'), el('i'), barra),
+          el('div', { class: 'equipo__marco' }, pantalla),
+          el('div', { class: 'equipo__base', 'aria-hidden': 'true' }));
+
+        // Teléfono con la misma pantalla en versión celular
+        const celImg = primera.celular
+          ? el('img', { src: primera.celular.img, alt: primera.celular.alt, width: 600, height: 1298, loading: modoCarga, decoding: 'async' })
+          : null;
+        const telefono = celImg ? el('figure', { class: 'telefono' }, el('div', { class: 'telefono__pantalla' }, celImg)) : null;
+
+        // Si el proyecto tiene varias pantallas (página, dashboard, punto de venta), se eligen con pestañas.
+        let pestanas = null;
+        if (p.vistas.length > 1) {
+          const botones = p.vistas.map((v, j) => el('button', {
+            type: 'button', class: 'vista', 'aria-pressed': String(j === 0), 'aria-controls': 'vista-' + p.id, text: v.nombre
+          }));
+          botones.forEach((b, j) => b.addEventListener('click', () => {
+            const v = p.vistas[j];
+            botones.forEach((o, k) => o.setAttribute('aria-pressed', String(j === k)));
+            equipo.className = 'equipo equipo--' + v.equipo;
+            pantalla.src = v.img;
+            pantalla.alt = v.alt;
+            barra.textContent = v.barra;
+            if (celImg && v.celular) { celImg.src = v.celular.img; celImg.alt = v.celular.alt; }
+            [equipo, telefono].forEach((n) => {
+              if (!n) return;
+              n.classList.remove('cambia');
+              void n.offsetWidth;
+              n.classList.add('cambia');
+            });
+          }));
+          pestanas = el('div', { class: 'proyecto__vistas', role: 'group', 'aria-label': 'Pantallas de ' + p.nombre }, botones);
+        }
+
+        const enlace = p.url
+          ? el('a', { class: 'proyecto__enlace', href: p.url, target: '_blank', rel: 'noopener' },
+              el('span', { text: p.dominio || 'Ver sitio' }),
+              el('span', { 'aria-hidden': 'true', text: '↗' }))
+          : null;
+
+        return el('li', { class: 'proyecto', id: 'proyecto-' + p.id, 'data-revela': '' },
+          el('div', { class: 'proyecto__texto' },
+            el('span', { class: 'proyecto__numero', 'aria-hidden': 'true', text: dosCifras(i + 1) }),
+            el('h3', { text: p.nombre }),
+            el('p', { class: 'proyecto__giro', text: p.giro }),
+            el('p', { class: 'proyecto__resumen', text: p.resumen }),
+            el('ul', { class: 'proyecto__hicimos', 'aria-label': 'Lo que hicimos' }, p.hicimos.map((h) => el('li', { text: h }))),
+            pestanas,
+            enlace),
+          el('div', { class: 'proyecto__escena' }, equipo, telefono));
+      });
+      proyectos.replaceChildren(...items);
+      proyectos.setAttribute('aria-busy', 'false');
+      observa(items);
+    }).catch(() => error(proyectos, pintaProyectos));
+  }
+  if (proyectos) pintaProyectos();
+
   /* ---------- Servicios ---------- */
   const servicios = document.querySelector('[data-servicios]');
   function pintaServicios() {
     carga('data/servicios.json').then((lista) => {
-      const fichas = lista.map((s) => {
-        const lienzo = el('div', { class: 'ficha__lienzo' });
-        if (s.foto) {
-          const img = el('img', { src: s.foto, alt: s.alt || '', width: s.ancho, height: s.alto, loading: 'lazy', decoding: 'async' });
-          const listo = () => lienzo.classList.add('ya');
-          img.addEventListener('load', listo);
-          img.addEventListener('error', listo);
-          lienzo.append(img);
-          if (img.complete) listo();
-        } else if (s.grafica) {
-          lienzo.classList.add('ya');
-          lienzo.setAttribute('role', 'img');
-          lienzo.setAttribute('aria-label', 'Gráfica de ventas que crece semana a semana');
-          const max = Math.max(...s.grafica);
-          lienzo.append(el('div', { class: 'teselas' },
-            s.grafica.map((v) => el('div', { class: 'teselas__col' },
-              Array.from({ length: Math.max(1, Math.round((v / max) * 9)) }, () => el('i'))))));
-        }
-        return el('li', { class: 'ficha' + (s.doble ? ' ficha--doble' : ''), 'data-revela': '' },
-          lienzo, el('h3', { text: s.nombre }), el('p', { text: s.beneficio }));
-      });
+      const fichas = lista.map((s, i) =>
+        el('li', { class: 'servicio', 'data-revela': '' },
+          el('span', { class: 'servicio__numero', 'aria-hidden': 'true', text: dosCifras(i + 1) }),
+          el('h3', { text: s.nombre }),
+          el('p', { text: s.beneficio })));
       servicios.replaceChildren(...fichas);
       servicios.setAttribute('aria-busy', 'false');
       observa(fichas);
