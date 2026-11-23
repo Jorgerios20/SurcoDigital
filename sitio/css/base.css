@@ -227,10 +227,10 @@ h3 { font-size: var(--t-texto); font-weight: 600; line-height: 1.3; }
 .equipo__barra i:first-child { background: var(--surco-brote-claro); }
 .equipo__direccion { margin-left: 12px; font-size: 0.8125rem; opacity: 0.8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .equipo__marco { overflow: hidden; aspect-ratio: 16 / 10; background: var(--surco-blanco); }
-.equipo__marco img { width: 100%; height: 100%; object-fit: cover; object-position: top; transition: transform var(--lento) var(--curva); }
+.equipo__marco img, .equipo__marco video { display: block; width: 100%; height: 100%; object-fit: cover; object-position: top; transition: transform var(--lento) var(--curva); }
 .equipo__base { display: none; }
 .proyecto:hover .equipo__marco img { transform: scale(1.015); }
-.equipo.cambia .equipo__marco img, .telefono.cambia img { animation: aparece var(--medio) var(--curva); }
+.equipo.cambia .equipo__marco > *, .telefono.cambia img { animation: aparece var(--medio) var(--curva); }
 
 .equipo--computadora { padding-inline: 5%; }
 .equipo--computadora .equipo__barra { display: none; }

@@ -24,6 +24,18 @@
         }
       },
       {
+        "nombre": "Recorrido en video",
+        "equipo": "computadora",
+        "barra": "ERP · Recorrido",
+        "video": "video/recorrido-erp.mp4",
+        "img": "video/recorrido-erp.webp",
+        "alt": "Video de 26 segundos: en el punto de venta se cobra tequila, cerveza y hielo, y el dashboard sube de $4,724 a $6,050 vendidos en el mes",
+        "celular": {
+          "img": "img/proyectos/baco/erp-dashboard-cel.webp",
+          "alt": "El dashboard del ERP de BACO en un celular"
+        }
+      },
+      {
         "nombre": "Dashboard",
         "equipo": "computadora",
         "barra": "ERP · Dashboard",

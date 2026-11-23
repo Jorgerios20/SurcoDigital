@@ -33,6 +33,7 @@
   };
 
   const dosCifras = (n) => String(n).padStart(2, '0');
+  const sinMovimiento = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   /* ---------- Proyectos ----------
      Solo se pintan los que están en data/proyectos.json.
@@ -47,10 +48,23 @@
         // Pantalla grande: ventana de navegador para páginas web, laptop para sistemas
         const pantalla = el('img', { src: primera.img, alt: primera.alt, width: 1600, height: 1000, loading: modoCarga, decoding: 'async' });
         const barra = el('span', { class: 'equipo__direccion', text: primera.barra });
+        const marco = el('div', { class: 'equipo__marco' }, pantalla);
         const equipo = el('figure', { class: 'equipo equipo--' + primera.equipo, id: 'vista-' + p.id },
           el('div', { class: 'equipo__barra', 'aria-hidden': 'true' }, el('i'), el('i'), el('i'), barra),
-          el('div', { class: 'equipo__marco' }, pantalla),
+          marco,
           el('div', { class: 'equipo__base', 'aria-hidden': 'true' }));
+
+        // Una vista con video (recorrido del sistema) cambia la imagen por un <video> mudo en bucle.
+        // Con movimiento reducido no arranca solo: se muestran los controles.
+        const video = (v) => {
+          const n = el('video', {
+            src: v.video, poster: v.img, width: 1280, height: 800, muted: '', loop: '', playsinline: '',
+            preload: 'metadata', 'aria-label': v.alt
+          });
+          n.muted = true;
+          if (sinMovimiento) n.controls = true; else { n.autoplay = true; n.play().catch(() => { n.controls = true; }); }
+          return n;
+        };
 
         // Teléfono con la misma pantalla en versión celular
         const celImg = primera.celular
@@ -68,8 +82,13 @@
             const v = p.vistas[j];
             botones.forEach((o, k) => o.setAttribute('aria-pressed', String(j === k)));
             equipo.className = 'equipo equipo--' + v.equipo;
-            pantalla.src = v.img;
-            pantalla.alt = v.alt;
+            if (v.video) {
+              marco.replaceChildren(video(v));
+            } else {
+              pantalla.src = v.img;
+              pantalla.alt = v.alt;
+              marco.replaceChildren(pantalla);
+            }
             barra.textContent = v.barra;
             if (celImg && v.celular) { celImg.src = v.celular.img; celImg.alt = v.celular.alt; }
             [equipo, telefono].forEach((n) => {
